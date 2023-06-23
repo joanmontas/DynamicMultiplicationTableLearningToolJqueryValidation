@@ -1,0 +1,95 @@
+/*
+	Name: Joan Montas
+	Email: Joan_Montas@student.uml.edu
+	File: style.css
+		GUI Assignment: GUI, HW4 part 1:  Validation Plugin
+	Date:06/23/2023
+	Description: Create a dynamic multiplication table.
+        Certain error handling was added using the
+        jquery validation plugin
+	Copyright (c) 2023 by Joan Montas. All rights reserved.
+*/
+
+
+body {
+    background-color: rebeccapurple;
+}
+
+/* holds the widget. They will be placed */
+#wrapper {
+    background-color: orange;
+
+}
+
+/* style and placing h1 into its grid */
+#wrapper h1{
+    font-size: 50px;
+    color: blue;
+}
+
+/* Placing input into its grid */
+#forminputs {
+    min-width: 500px;
+    min-height: 300px;
+
+    max-width: 500px;
+    max-height: 300px;
+}
+
+/* Placing display into its grid. Holds the tables*/
+#display {
+
+    min-width: 500px;
+    min-height: 300px;
+
+    max-width: 500px;
+    max-height: 300px;
+    
+    background-color: blue;
+}
+
+#thetable {
+    /* Make the table scrollable */
+    display: block;
+    overflow: scroll;
+    min-width: 500px;
+    min-height: 300px;
+
+    max-width: 500px;
+    max-height: 300px;
+}
+
+/* a bit of styling */
+#thetable td {
+    background-color: red;
+    border: 1px solid white;
+    text-align: right;
+    color: white;
+    min-width: 30px;
+    height: 20px;
+}
+
+/* Style table for easy readability */
+#thetable td:nth-child(odd){
+    background-color: green;
+}
+
+#thetable tr:nth-child(even) td{
+/* https://stackoverflow.com/questions/29993219/css-nth-child-does-not-work */
+    background-color: black;
+}
+
+#inputbutton{
+    background-color: blue;
+    color: white;
+}
+
+#inputbutton:hover{
+    background-color: red;
+}
+
+/* Makes it easier to spot the error */
+.error {
+    /* https://forum.jquery.com/topic/how-do-i-style-jquery-validate-error-messages */
+    background-color: red;
+}
